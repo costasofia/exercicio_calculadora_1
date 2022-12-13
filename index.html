@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="calculadora-border">
+        <div id="calculadora-ecra">
+            <form id="formInput">
+                <input type="text" id="input-number" placeholder="0" readonly>
+            </form>
+
+            <input type="text" id="result" placeholder="0" disabled>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div>
+                    <button id="sinal" value=" 3.14159265358979323846"
+                        onclick="input(' 3.14159265358979323846')">π</button>
+                    <button id="sinal" value="2.718281828459045235360287"
+                        onclick="input(' 2.718281828459045235360287')">e</button>
+                    <button id="sinal" value="log" onclick="log()">log</button>
+                    <button id="sinal" value="ln" onclick="ln()">ln</button>
+
+                </div>
+                <div>
+                    <button id="sinal" value="1/x" onclick="divisao()">1/x</button>
+                    <button id="sinal" value="x^2" onclick="expoente()">x^2</button>
+                    <button id="sinal" value="√" onclick="sqrt()">√</button>
+                    <button id="sinal" onclick="abs()" value="||">|x|</button>
+                </div>
+                <div>
+
+                    <button id="sinal" value="sin" onclick="sin()">sin</button>
+                    <button id="sinal" value="cos" onclick="cos()">cos</button>
+                    <button id="sinal" value="tan" onclick="tan()">tan</button>
+                    <button id="sinal" value="rad" onclick="rad()">rad</button>
+                </div>
+                <div>
+
+                    <button id="sinal" value="x!" onclick="factorial()">x!</button>
+                    <button id="sinal" value="-/+" onclick="negPos()">-/+</button>
+                    <button id="sinal" value="exp" onclick="exp()">exp</button>
+                    <button id="sinal" value="%" onclick="per()">%</button>
+                </div>
+                <div>
+          
+                    <button id="sinal" value="x^3" onclick="expoente3()">x^3</button>
+                  
+    
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <button id="sinal" value="(" onclick="input('(')">(</button>
+                    <button id="sinal" value=")" onclick="input(')')">)</button>
+                    <button id="sinal" onclick="reset()">AC</button>
+                    <button id="sinal" onclick="clean()">
+                        <- </button>
+                </div>
+
+                <div>
+                    <button id="sinal" onclick="input('+')">+</button>
+                    <button id="number" value="9" onclick="input('9')">9</button>
+                    <button id="number" value="8" onclick="input('8')">8</button>
+                    <button id="number" value="7" onclick="input('7')">7</button>
+                </div>
+                <div>
+                    <button id="sinal" onclick="input('-')">-</button>
+                    <button id="number" value="6" onclick="input('6')">6</button>
+                    <button id="number" value="5" onclick="input('5')">5</button>
+                    <button id="number" value="4" onclick="input('4')">4</button>
+                </div>
+                <div>
+                    <button id="sinal" onclick="input('/')">/</button>
+                    <button id="number" value="3" onclick="input('3')">3</button>
+                    <button id="number" value="2" onclick="input('2')">2</button>
+                    <button id="number" value="1" onclick="input('1')">1</button>
+                    <div>
+                        <button id="sinal" onclick="input('*')">*</button>
+                        <button id="number" value="0" onclick="input('0')">0</button>
+                        <button id="number" value="." onclick="input('.')">.</button>
+                        <button id="sinal" onclick="calc()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
